@@ -1,0 +1,112 @@
+/** Global definitions **/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #242424;
+  --dark-grey: #424242;
+  --green: #4ee1a0;
+  --grey: #d9d9d9;
+  --white: #ffffff;
+  --orange: #ff6f5b;
+}
+
+body {
+  color: var(--grey);
+  background: var(--black);
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+h1 {
+  /* Heading (L) */
+  color: var(--white);
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.3;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+}
+
+/* Header */
+
+#header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#header .name {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--white);
+}
+
+#header .social {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Hero */
+
+#hero .pic-box {
+  position: relative;
+}
+
+#hero .pic-decor {
+  position: absolute;
+  top: 80%;
+  left: -50%;
+}
+
+#hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+
+#hero .greeting {
+  max-width: 22rem;
+}
+
+#hero .txt-underline {
+  text-decoration: var(--green) wavy underline;
+}
+
+#hero .contact {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: (--white);
+  text-transform: uppercase;
+  text-decoration: var(--green) solid underline;
+}
+
+#hero .pic {
+  object-fit: contain;
+}
+
+#hero .line-separator {
+  width: 100%;
+  border-top: 1px solid var(--grey);
+}
